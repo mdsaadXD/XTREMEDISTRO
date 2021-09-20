@@ -45,6 +45,23 @@
   --z-fixed: 100;
 }
 
+/*========= Button Dark/Light =========*/
+.nav-btns{
+  display:flex;
+  align-items: center;
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--second-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hove{
+  color: var(--first-color)
+}
+
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;
