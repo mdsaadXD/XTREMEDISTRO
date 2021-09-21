@@ -331,6 +331,7 @@ form textarea {
 }
 .contact-button:hover {
   background: var(--hover);
+  cursor: pointer;
 }
 .footer {
   display: grid;
