@@ -214,6 +214,13 @@ header.shadow {
   font-size: 22px;
   cursor: pointer;
 }
+.video-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 .home {
   position: relative;
   width: 100%;
