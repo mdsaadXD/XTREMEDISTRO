@@ -13,6 +13,16 @@
 
 </head>
 <body>
+    <!--Loader-->
+    <div class="loader-bg">
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h3>XTREMEDISTRO</h3>
+    </div>
+    </div>
     <!-- Navbar -->
     <header>
         <a href="#home" class="logo">XD</a>
@@ -190,8 +200,13 @@
     </div>
 
 
-
     <!-- Link To JS -->
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-bg').fadeToggle();
+        }, 1500);
+    </script>
 </body>
 </html>
