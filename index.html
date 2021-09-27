@@ -33,7 +33,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Videos</a></li>
-            <li><a href="contact-form/index.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="Landing Page/index.html">MDSAADVIDEOS</a></li>
             <div class="bx bx-moon" id="darkmode"></div>
         </ul>
@@ -52,7 +52,7 @@
             <span>Hello, I'm</span>
             <h1>XtremeDistro</h1>
             <h2>Developer</h2>
-            <a href="contact-form/index.html" class="btn">Contact Me</a>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
 
         <div class="scroll-down">
@@ -172,16 +172,31 @@
     </section>
     <!-- Contact -->
     <section class="contact" id="contact">
-        <div class="heading">
-            <h2>Contact</h2>
-            <span>Connect With Us</span>
+          <div class="container">
+            <div class="form-group">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form
+          action="https://formspree.io/f/mzbyondj"
+          method="POST"
+        >
+          <label>
+          Your Name:
+          <input type="name" name="_replyto">
+          </label>
+          <label>
+            Your email:
+            <input type="email" name="_replyto">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          </div>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
         </div>
-        <div class="contact-form">
-            <form id="contact-form" method="post" action="contact-form/index.html">
-                <input type="submit" value="send" class="contact-button">
-            </form>
-        </div>
-    </section>
+        </section>
     <!-- Footer -->
     <div class="footer">
         <h2>mdsaadXD</h2>
