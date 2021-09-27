@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MDSaad Videos Installation</title>
+        <Link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+                <a href="https://mdsaadXD.github.io/XTREMEDISTRO"><img src = "img/logo.png" class = "logo"></a>
+                <div class="toggleMenu" onclick="menuToggle();"></div>
+                <ul class="navigation">
+                    <li><a href = "https://mdsaadXD.github.io/XTREMEDISTRO">HOME</a></li>
+                    <li><a href = "https://sites.google.com/view/mdsaadvideosdownloads/home">DOWNLOADS</a></li>
+                    <li><a href = "#">YouTube</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Introducing<br><span>MDSAADVIDEOS</span></h2>
+                    <p>MDSaadVideos is an app which has all of my past deleted videos. So don't think that I deleted my channel.</p>
+                    <a href = "https://sites.google.com/view/mdsaadvideosdownloads/home">Download Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/img1.png" class = "pepsi">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src = "img/img1.png" onclick="imgSlider('img/img1.png');changeBgColor('#0062be')"></li>
+                <li><img src = "img/img2.png" onclick="imgSlider('img/img2.png');changeBgColor('#e60c2c')"></li>
+                <li><img src = "img/img3.png" onclick="imgSlider('img/img3.png');changeBgColor('#1e1e1e')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href = "https://facebook.com/mdsaadXD"><img src="img/facebook.png"></a></li>
+                <li><a href = "https://twitter.com/mdsaadXD"><img src="img/twitter.png"></a></li>
+                <li><a href = "https://instagram.com/mdsaad._.123"><img src="img/instagram.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/Javascript">
+            function imgSlider(anything) {
+                document.querySelector('.pepsi').src = anything;
+            }
+            function changeBgColor(color) {
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+
+            function menuToggle(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const navigation = document.querySelector('.navigation');
+                toggleMenu.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>
