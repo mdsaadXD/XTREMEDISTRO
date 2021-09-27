@@ -1,40 +1,39 @@
-<!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form | XTREMEDISTRO</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head>
-<body>
-  <div class="wrapper">
-    <header>Send us a Message</header>
-    <form action="#">
-      <div class="dbl-field">
-        <div class="field">
-          <input type="text" name="name" placeholder="Enter your name">
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Enter your email">
-          <i class='fas fa-envelope'></i>
-        </div>
-      </div>
-      <div class="message">
-        <textarea placeholder="Write your message" name="message"></textarea>
-        <i class="material-icons">message</i>
-      </div>
-      <div class="button-area">
-        <button type="submit">Send Message</button>
-        <span></span>
-      </div>
-    </form>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XtremeDistro</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<section>
+  <div class="container">
+    <div class="form-group">
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mzbyondj"
+  method="POST"
+>
+  <label>
+  Your Name:
+  <input type="name" name="_replyto">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
   </div>
-
-  <script src="script.js"></script>
-
-</body>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</div>
+</section>
+<script src="script.js"></script>
+  </body>
 </html>
