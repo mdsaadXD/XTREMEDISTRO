@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    
     <!--Loader-->
     <div class="loader-bg">
     <div class="loader">
@@ -23,6 +24,11 @@
         <h3>XTREMEDISTRO</h3>
     </div>
     </div>
+
+    <div id="progress-bar"></div>
+    <div class="scrollPath"></div>
+
+
     <!-- Navbar -->
     <header>
         <a href="#home" class="logo">XD</a>
@@ -222,5 +228,13 @@
             $('.loader-bg').fadeToggle();
         }, 1500);
     </script>
+        <script type="text/JavaScript">
+            let progress = document.getElementById('progress-bar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function() {
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
 </body>
 </html>
