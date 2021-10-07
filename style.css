@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .loader-bg{
   position: fixed;
   z-index: 999999;
@@ -144,10 +144,10 @@
   text-decoration: none;
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Architects Daughter', cursive;
 }
 :root {
-  --main-color: #e00000;
+  --main-color: #4a00e0;
   --bg-color: #fff;
   --text-color: #0f0c27;
   --hover: hsl(260, 100%, 51%);
