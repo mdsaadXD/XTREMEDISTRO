@@ -29,7 +29,7 @@ darkmode.onclick = () => {
 }
 
 var form = document.getElementById("my-form");
-    
+
     async function handleSubmit(event) {
       event.preventDefault();
       var status = document.getElementById("my-form-status");
@@ -48,3 +48,10 @@ var form = document.getElementById("my-form");
       });
     }
     form.addEventListener("submit", handleSubmit)
+
+    //Cursor//
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
