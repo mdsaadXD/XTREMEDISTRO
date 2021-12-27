@@ -1,33 +1,256 @@
-<html>
-    <head>
-        <title>Comming Soon</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-            <div class="hero">
-            <p>Building Awesome Website</p>
-            <h1>COMMING SOON</h1>
-                <hr>
-                <p id="launch"></p>
+<!Doctype HTML>
+<html lang = "en" dir = "ilr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTREMEDISTRO | 2022</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body>
+
+    <div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <header>
+      <a href="#" class="brand">XTREMEDISTRO</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <a href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <section class="main" id="main">
+      <div class="content">
+        <h2>Hello, I'm<br><span>XTREMEDISTRO</span></h2>
+        <div class="animated-text">
+          <h3>Web Developer</h3>
+          <h3>Editor</h3>
+          <h3>Design</h3>
+        </div>
+        <a href="#work" class="btn">Download App</a>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="title reveal">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="content">
+        <div class="column col-left reveal">
+          <div class="img-card">
+            <img src="images/img1.jpg" alt="">
+          </div>
+        </div>
+        <div class="column col-right reveal">
+          <h2 class="content-title">Welcome to my website XTREMEDISTRO 2022 Edition!</h2>
+          <p class="paragraph-text">This 2022 Edition will help us with 3 different services. 1. Coding 2. Video Editing  3. Photo Editing. I will complete the 3 courses by the year 2022. That's why I introducing with XTREMEDISTRO 2022 Edition.
+          <h2 class="content-title">Let me introduce myself!</h2>
+            My name is MD Saad. I am web Developer, Editor also Graphic Designer. I opened a channel on YouTube and started covering all the course.
+          </p>
+          <a href="https://linktr.ee/mdsaadXD" class="btn">Social Medias</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="title reveal">
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="content">
+        <div class="column col-left reveal">
+          <h2 class="content-title">My Skills and Experiences</h2>
+          <p>I am expert on Programming. I am also expert on making Operating Systems. So let's see my skills on Programming.</p>
+          <a href="https://www.youtube.com/watch?v=AdXKQjfsZaA" class="btn">Video</a>
+        </div>
+        <div class="column col-right reveal">
+          <div class="bar">
+            <div class="info">
+              <span>HTML</span>
+              <span>95%</span>
             </div>
-        </header>
-    </body>
-    <script>
-        var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("launch").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s";
-            if(distance < 0) {
-                clearInterval(x);
-                document.getElementById("launch").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+            <div class="line html"></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>CSS</span>
+              <span>85%</span>
+            </div>
+            <div class="line css"></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Javascript</span>
+              <span>80%</span>
+            </div>
+            <div class="line javascript"></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>JQuery</span>
+              <span>80%</span>
+            </div>
+            <div class="line jquery"></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>PHP</span>
+              <span>75%</span>
+            </div>
+            <div class="line php"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="title reveal">
+        <h2 class="section-title">My Services</h2>
+        <p>So, from the beginning of 2022, I started cover up all the 3 categories in 1 year. Let us see the 3 categories!</p>
+      </div>
+      <div class="content">
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="info">
+            <h3>Design</h3>
+            <p>Designer a picture, a 3D Object, a graphics are very difficult when you are a begginer. But later, you will be able to design anything after you watch my channel on YouTube.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-file-code"></i>
+          </div>
+          <div class="info">
+            <h3>Coding</h3>
+            <p>By learning code, you will be able to make any type of programs neccessary. You can code Java, Python, C++, HTML, CSS, C#, .net framework, etc.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-object-group"></i>
+          </div>
+          <div class="info">
+            <h3>Editing</h3>
+            <p>Photo Editing and also Video Editing is very easy in mobile device. But if you switch to laptop or PC, you will see the difference. Which means you will see the advanced mode of editing program. Like Photoshop, After Effect on computer or laptop and Kinemaster, Power Director, CapCut on Mobile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="title reveal">
+        <h2 class="section-title">My Work</h2>
+      </div>
+      <div class="content">
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work1.jpg" alt="">
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work2.jpg" alt="">
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work3.jpg" alt="">
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work4.jpg" alt="">
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work5.jpg" alt="">
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work6.jpg" alt="">
+          </div>
+        </div>
+        <div class="title reveal">
+          <a href="https://www.youtube.com/channel/UC8V4I0axzJY9iELZQLGVGdA/videos" class="btn">See All</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="title reveal">
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info">
+              <h3>Address</h3>
+              <span>Omar Bin Al Khattab Road, Riyadh, Saudi Arabia</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info">
+              <h3>Phone</h3>
+              <span>+966541674763</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+              <h3>Email Address</h3>
+              <span>hello@allfortech.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form reveal">
+            <h3>Send Message</h3>
+            <div class="input-box">
+              <input type="text" name="" value="" placeholder="Name">
+            </div>
+            <div class="input-box">
+              <input type="text" name="" value="" placeholder="Email">
+            </div>
+            <div class="input-box">
+              <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="send-btn" name="" value="Send">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-title">XTREMEDISTRO</span>
+      <p>Copyright @2022 <a href="https://linktr.ee/mdsaadXD">XTREMEDISTRO</a>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js" charset="utf-8"></script>
+
+  </body>
 </html>
